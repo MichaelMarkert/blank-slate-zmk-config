@@ -44,7 +44,7 @@
 		)
     };
     
-    tap_dances {
+    behaviors {
     	shifty: shift_caps_word {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_SHIFTY";
