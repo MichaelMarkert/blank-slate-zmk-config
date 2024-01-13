@@ -49,15 +49,15 @@
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_SHIFTY";
 		#binding-cells = <0>;
-		tapping-term-ms = <150>;
+		tapping-term-ms = <250>;
 		bindings = <&kp LSHFT>, <&caps_word>;
 	};
 	td0: hyphen_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_HYPHY";
 		#binding-cells = <0>;
-		tapping-term-ms = <150>;
-		bindings = <&kp LBKT>, <&kp POUND>;
+		tapping-term-ms = <250>;
+		bindings = <&kp LBKT>, <&kp NON-US-HASH>;
 	};
     };
 
