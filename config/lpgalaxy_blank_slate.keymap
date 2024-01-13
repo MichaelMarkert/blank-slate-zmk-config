@@ -42,7 +42,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp CAPS>
-                , <&macro_tap &kp J>
+                , <&macro_release &kp CAPS>
+		, <&macro_tap &kp J>
+		, <&macro_press &kp CAPS>
                 , <&macro_release &kp CAPS>
                 ;
         };
