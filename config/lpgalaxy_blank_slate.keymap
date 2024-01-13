@@ -37,11 +37,15 @@
     };
 
     macros {
-      ZMK_MACRO(thumbs_up,
-		wait-ms = <1>;
-		tap-ms = <5>;
-                bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
-		)
+        mouse_l: mouse_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp CAPS>
+                , <&macro_tap &kp J>
+                , <&macro_release &kp CAPS>
+                ;
+        };
     };
     
     behaviors {
@@ -101,7 +105,7 @@
             label = "Nav";
             bindings = <
 &bt BT_CLR &trans     &trans     &kp UP      &trans          &kp PG_UP    &trans     &trans         &trans      &trans     &trans     &kp DEL
-&trans     &trans     &kp LEFT   &kp DOWN    &kp RIGHT       &kp PG_DN    &trans     &kp CAPS J         &trans      &trans     &trans     &trans
+&trans     &trans     &kp LEFT   &kp DOWN    &kp RIGHT       &kp PG_DN    &trans     &mouse_l       &trans      &trans     &trans     &trans
 &bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)   &bt BT(4)       &trans       &trans     &trans         &trans     	&trans     &trans     &trans
 #ifdef TBLE_DUAL_2U
 &trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
