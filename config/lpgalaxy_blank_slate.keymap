@@ -52,13 +52,6 @@
 		tapping-term-ms = <150>;
 		bindings = <&kp LSHFT>, <&caps_word>;
 	};
-	td0: tap_dance_0 {
-            	compatible = "zmk,behavior-tap-dance";
-		label = "TD_HYPHEN";
-            	#binding-cells = <0>;
-            	tapping-term-ms = <200>;
-            	bindings = <&kp LBKT>, <&kp HYPHEN>;
-        };
     };
 
 // Conditional layer only when we have less thumb keys
