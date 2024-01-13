@@ -42,9 +42,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp CAPSLOCK>
-		, <&macro_wait_time 50>
 		, <&macro_press &kp J>
-		, <&macro_wait_time 50>
+		, <&macro_pause_for_release>
+		, <&macro_release &kp J>
                 , <&macro_release &kp CAPSLOCK>
                 ;
         };
