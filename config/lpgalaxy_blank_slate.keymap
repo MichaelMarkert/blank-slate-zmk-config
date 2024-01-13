@@ -41,36 +41,36 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp CAPS_LOCK>
+                = <&macro_press &kp CAPSLOCK>
 		, <&macro_press &kp J>
-                , <&macro_release &kp CAPS_LOCK>
+                , <&macro_release &kp CAPSLOCK>
                 ;
         };
 	mouse_u: mouse_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp CAPS_LOCK>
+                = <&macro_press &kp CAPSLOCK>
 		, <&macro_press &kp I>
-                , <&macro_release &kp CAPS_LOCK>
+                , <&macro_release &kp CAPSLOCK>
                 ;
         };
 	mouse_d: mouse_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp CAPS_LOCK>
+                = <&macro_press &kp CAPSLOCK>
 		, <&macro_press &kp K>
-                , <&macro_release &kp CAPS_LOCK>
+                , <&macro_release &kp CAPSLOCK>
                 ;
         };
 	mouse_r: mouse_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp CAPS_LOCK>
+                = <&macro_press &kp CAPSLOCK>
 		, <&macro_press &kp L>
-                , <&macro_release &kp CAPS_LOCK>
+                , <&macro_release &kp CAPSLOCK>
                 ;
         };
     };
