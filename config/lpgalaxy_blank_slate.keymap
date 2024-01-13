@@ -53,9 +53,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp CAPSLOCK>
-		, <&macro_wait_time 50>
 		, <&macro_press &kp I>
-		, <&macro_wait_time 50>
+		, <&macro_pause_for_release>
+		, <&macro_release &kp I>
                 , <&macro_release &kp CAPSLOCK>
                 ;
         };
@@ -64,9 +64,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp CAPSLOCK>
-		, <&macro_wait_time 50>
 		, <&macro_press &kp K>
-		, <&macro_wait_time 50>
+		, <&macro_pause_for_release>
+		, <&macro_release &kp K>
                 , <&macro_release &kp CAPSLOCK>
                 ;
         };
@@ -75,9 +75,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp CAPSLOCK>
-		, <&macro_wait_time 50>
 		, <&macro_press &kp L>
-		, <&macro_wait_time 50>
+		, <&macro_pause_for_release>
+		, <&macro_release &kp L>
                 , <&macro_release &kp CAPSLOCK>
                 ;
         };
@@ -134,7 +134,7 @@
             bindings = <
 &bt BT_CLR &trans     &trans     &kp UP      &trans          &kp PG_UP    &trans     &trans         &mouse_u      &trans     &trans     &trans
 &trans     &trans     &kp LEFT   &kp DOWN    &kp RIGHT       &kp PG_DN    &trans     &mouse_l       &mouse_d      &mouse_r   &trans     &trans
-&bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)   &bt BT(4)       &trans       &trans     &trans         &trans     	&trans     &trans     &trans
+&trans     &bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)       &bt BT(4)    &trans     &trans         &trans     	  &trans     &trans     &trans
 #ifdef TBLE_DUAL_2U
 &trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
