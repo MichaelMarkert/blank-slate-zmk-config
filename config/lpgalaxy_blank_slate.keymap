@@ -42,7 +42,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp CAPSLOCK>
+		, <&macro_wait_time 50>
 		, <&macro_press &kp J>
+		, <&macro_wait_time 50>
                 , <&macro_release &kp CAPSLOCK>
                 ;
         };
@@ -51,7 +53,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp CAPSLOCK>
+		, <&macro_wait_time 50>
 		, <&macro_press &kp I>
+		, <&macro_wait_time 50>
                 , <&macro_release &kp CAPSLOCK>
                 ;
         };
@@ -60,7 +64,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp CAPSLOCK>
+		, <&macro_wait_time 50>
 		, <&macro_press &kp K>
+		, <&macro_wait_time 50>
                 , <&macro_release &kp CAPSLOCK>
                 ;
         };
@@ -69,7 +75,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp CAPSLOCK>
+		, <&macro_wait_time 50>
 		, <&macro_press &kp L>
+		, <&macro_wait_time 50>
                 , <&macro_release &kp CAPSLOCK>
                 ;
         };
