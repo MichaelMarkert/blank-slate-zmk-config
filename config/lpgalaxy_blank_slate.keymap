@@ -190,7 +190,7 @@
 #elif defined(TBLE_MIT)
  &kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
 #else
- &kp ESC    &kp LCTRL  &kp LALT   &kp LGUI    &kp BKSP      &mo NUM_L      &mo SYM_L         &kp SPACE      &kp RGUI    &kp RALT   &kp DOWN      &kp RET
+ &mt GLOBE ESC    &kp LCTRL  &kp LALT   &kp LGUI    &kp BKSP      &mo NUM_L      &mo SYM_L         &kp SPACE      &kp RGUI    &kp RALT   &kp DOWN      &kp RET
 #endif
             >;
         };
