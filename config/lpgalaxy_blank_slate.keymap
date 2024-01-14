@@ -157,7 +157,7 @@
 		tapping-term-ms = <200>;
 		bindings = <&kp LBKT>, <&kp NON_US_HASH>;
 	};
-	td1: hyphen_tap_dance {
+	td1: globe_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_GLOBY";
 		#binding-cells = <0>;
