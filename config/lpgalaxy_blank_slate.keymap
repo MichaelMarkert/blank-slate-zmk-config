@@ -230,7 +230,7 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans     &trans     &trans  	&trans    &trans     &trans      &trans     &trans   &trans     &trans       &trans     &bootloader
+&trans     &trans     &kp LS(N7)  	&kp LA(N7)    &LA(LS(N7))     &trans      &trans     &trans   &trans     &trans       &trans     &bootloader
 &trans     &trans     &trans  	&trans    &trans     &trans      &trans     &trans   &trans     &trans       &trans     &trans
 &trans     &trans     &trans  	&trans    &trans     &trans      &trans     &trans   &trans     &trans       &trans     &trans
 #ifdef TBLE_DUAL_2U
