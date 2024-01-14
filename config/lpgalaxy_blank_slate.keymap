@@ -154,7 +154,7 @@
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_HYPHY";
 		#binding-cells = <0>;
-		tapping-term-ms = <250>;
+		tapping-term-ms = <200>;
 		bindings = <&kp LBKT>, <&kp NON_US_HASH>;
 	};
     };
@@ -230,15 +230,15 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans     &kp LBRC   &kp AMPS   &kp STAR    &kp LPAR     &kp RBRC     &trans     &trans    &trans       &trans       &trans     &bootloader
-&trans     &kp COLON  &kp DLLR   &kp PRCNT   &kp CARET    &kp PLUS     &trans     &trans    &trans       &trans       &trans     &trans
-&trans     &kp TILDE  &kp EXCL   &kp AT      &kp HASH     &kp PIPE     &trans     &trans    &trans       &trans       &trans     &trans
+&trans     &trans     &kp SLASH  &kp PIPE    &kp BSLH     &trans       &trans     &kp SQT   &KP DQT      &trans       &trans     &bootloader
+&trans     &kp LBRC   &kp RBRC   &kp LT      &kp GT    	  &trans       &trans     &kp LPAR  &kp RPAR     &kp LBKT     &kb RBKT   &trans
+&trans     &trans     &kp ASTRK  &kp HASH    &kp PLUS     &trans       &trans     &trans    &trans    	 &trans       &trans     &trans
 #ifdef TBLE_DUAL_2U
 &trans &trans        &trans     &kp RPAR                &trans                    &trans       &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
 &trans &trans        &trans     &kp RPAR        &trans                &trans             &trans      &trans   &trans &trans &trans
 #else
-&trans &trans        &trans     &kp RPAR        &trans          &trans       &trans    &trans  &trans         &trans &trans &trans
+&trans 	   &trans     &trans     &trans       &trans       &trans      &trans     &trans    &trans       &trans       &trans     &trans
 #endif
             >;
         };
