@@ -159,13 +159,6 @@
 		tapping-term-ms = <200>;
 		bindings = <&kp LBKT>, <&kp NON_US_HASH>;
 	};
-	td1: globe_tap_dance {
-		compatible = "zmk,behavior-tap-dance";
-		label = "TD_GLOBY";
-		#binding-cells = <0>;
-		tapping-term-ms = <200>;
-		bindings = <&kp ESC>, <&kp GLOBE>;
-	};
     };
 
 // Conditional layer only when we have less thumb keys
@@ -199,7 +192,7 @@
 #elif defined(TBLE_MIT)
  &kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
 #else
- &td1    &kp LCTRL  &kp LALT   &kp LGUI    &kp BKSP      &mo NUM_L      &mo SYM_L         &kp SPACE      &kp RGUI    &kp RALT   &kp DOWN      &kp RET
+ &mt RA(ESC) ESC    &kp LCTRL  &kp LALT   &kp LGUI    &kp BKSP      &mo NUM_L      &mo SYM_L         &kp SPACE      &kp RGUI    &kp RALT   &kp DOWN      &kp RET
 #endif
             >;
         };
