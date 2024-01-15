@@ -202,7 +202,7 @@
             bindings = <
 &trans	   &trans     &trans     &kp UP      &trans          &kp PG_UP    &mouse_su     &trans         &mouse_u      &mouse_sl  &mouse_sr  &trans
 &trans     &trans     &kp LEFT   &kp DOWN    &kp RIGHT       &kp PG_DN    &mouse_sd     &mouse_l       &mouse_d      &mouse_r   &trans     &trans
-&trans     &trans     &trans  	 &trans      &trans          &trans       &kp BKSP     	&kp DEL        &trans        &trans     &trans     &trans
+&trans     &trans     &trans  	 &trans      &kp LG(LEFT)    &kp LG(RIGHT) &kp BKSP     &kp DEL        &trans        &trans     &trans     &trans
 #ifdef TBLE_DUAL_2U
 &trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
