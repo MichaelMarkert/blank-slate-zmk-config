@@ -156,8 +156,22 @@
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_HYPHY";
 		#binding-cells = <0>;
-		tapping-term-ms = <200>;
+		tapping-term-ms = <150>;
 		bindings = <&kp LBKT>, <&kp NON_US_HASH>;
+	};
+	td1: space_tap_dance {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_SPACY";
+		#binding-cells = <0>;
+		tapping-term-ms = <150>;
+		bindings = <&kp SPACE>, <&kp RET>;
+	};
+	td2: bksp_tap_dance {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_BACKOSPACY";
+		#binding-cells = <0>;
+		tapping-term-ms = <150>;
+		bindings = <&kp BKSP>, <&kp DEL>;
 	};
     };
 
