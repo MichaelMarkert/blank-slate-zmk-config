@@ -223,7 +223,7 @@
 #elif defined(TBLE_MIT)
 &trans  &trans        &trans     &trans      &trans                &trans             &trans      &trans   &trans &trans &trans
 #else
-&trans     &trans     &trans     &trans      &mt LA(LS) BKSP          &kp HOME     &kp END     &mouse_lbtn         &mouse_rbtn      &trans     &trans     &trans
+&trans     &trans     &trans     &trans      &mt LA(LSHFT) BKSP          &kp HOME     &kp END     &mouse_lbtn         &mouse_rbtn      &trans     &trans     &trans
 #endif
             >;
         };
