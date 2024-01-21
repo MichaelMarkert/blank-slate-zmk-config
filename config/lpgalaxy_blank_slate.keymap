@@ -246,7 +246,7 @@
 #elif defined(TBLE_MIT)
 &trans  &trans       &trans     &kp N0      &trans           &none            &trans        &kp DEL      &trans &trans &trans
 #else
-&trans     &trans       &trans  &trans  &trans    &none     &none     &trans    &trans      &trans 	 &trans     &trans
+&trans     &trans       &trans  &trans  &trans    &none     &none     &trans    &trans      &trans 	 &trans     &kp GLOBE
 #endif
             >;
         };
