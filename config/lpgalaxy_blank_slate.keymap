@@ -272,7 +272,7 @@
             bindings = <
 &sys_reset &bootloader  &trans 	&trans 	&trans    &trans   &trans    &bt BT(0)  &bt BT(1)   &bt BT(2)    &bt BT(3)  &bt BT(4)
 &trans     &trans	&trans 	&trans 	&trans    &trans   &trans    &trans     &trans      &trans       &trans     &trans
-&trans     &trans	&trans 	&trans 	&trans    &trans   &trans    &bt BT_CLR &trans      &trans       &trans     &trans
+&trans     &trans	&trans 	&trans 	&trans    &trans   &trans    &bt BT_CLR &trans      &trans       &soft_off     &trans
 #ifdef TBLE_DUAL_2U
 &trans  &trans       &trans     &kp N0              &trans                 &trans            &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
