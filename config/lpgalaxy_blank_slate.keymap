@@ -153,6 +153,14 @@
     };
     
     behaviors {
+	nav: nav {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <23>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp QUOT>, <&mo NAV_L>;
+        };
 	td0: hyphen_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_HYPHY";
@@ -213,7 +221,22 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_par {
+        combo_slsh {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp LS(N7)>;
+        };
+	combo_vert {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp LA(N7)>;
+        };
+	combo_bkslsh {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp LA(LS(N7))>;
+        };
+	combo_par {
             timeout-ms = <50>;
             key-positions = <19 20>;
             bindings = <&par>;
@@ -232,6 +255,26 @@
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&crly>;
+        };
+	combo_em {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp LA(SLASH)>;
+        };
+	combo_excl {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&kp LS(N1)>;
+        };
+	combo_qstn {
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&kp LS(NUHS)>;
+        };
+	combo_eqls {
+            timeout-ms = <50>;
+            key-positions = <34 35>;
+            bindings = <&kp LS(N0)>;
         };
     };
 
