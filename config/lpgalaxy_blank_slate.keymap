@@ -153,9 +153,9 @@
     };
     
     behaviors {
-	nav: nav {
+	navlayer: navlayer {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <23>;
+            binding-cells = <23>;
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
