@@ -209,6 +209,13 @@
 		tapping-term-ms = <200>;
 		bindings = <&kp LA(N8)>, <&kp LA(N9)>;
 	};
+	accent: accent_tap_dance {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_ACNT";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LS(EQUAL)>, <&kp EQUAL>;
+	};
     };
 
     combos {
@@ -282,6 +289,11 @@
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp LS(N6)>;
+        };
+	combo_acnt {
+            timeout-ms = <50>;
+            key-positions = <29 30>;
+            bindings = <&accent>;
         };
 	combo_em {
             timeout-ms = <50>;
