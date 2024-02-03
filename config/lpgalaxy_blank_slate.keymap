@@ -153,14 +153,6 @@
     };
     
     behaviors {
-	navlayer: navlayer {
-            compatible = "zmk,behavior-hold-tap";
-            binding-cells = <23>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp QUOT>, <&mo NAV_L>;
-        };
 	td0: hyphen_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_HYPHY";
