@@ -202,7 +202,7 @@
 		tapping-term-ms = <200>;
 		bindings = <&kp GRAVE>, <&kp LS(GRAVE)>;
 	};
-	crly: ptdbracket_tap_dance {
+	crly: crlybracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_CRLY";
 		#binding-cells = <0>;
