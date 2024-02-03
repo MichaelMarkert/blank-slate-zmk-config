@@ -233,7 +233,7 @@
 	combo_snglqt {
             timeout-ms = <50>;
             key-positions = <5 6>;
-	    require-prior-idle-ms = <150>;
+	    require-prior-idle-ms = <175>;
             bindings = <&kp LS(BSLH)>;
         };
 	combo_slsh {
