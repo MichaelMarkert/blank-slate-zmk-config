@@ -172,7 +172,7 @@
 		label = "TD_BACKOSPACY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp BKSP>, <&kp DEL>;
+		bindings = <&kp BKSP>, <&kp LS(BKSP)>;
 	};
 	td3: mousebutton_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
@@ -348,7 +348,7 @@
 #elif defined(TBLE_MIT)
  &kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
 #else
- &mt RA(ESC) ESC    &kp LCTRL  &kp LALT   &kp LGUI    &kp BKSP   &mo NUM_L      &mo SYM_L         &td1      &kp RGUI    &kp RALT   &mo SYS_L      &kp RET
+ &mt RA(ESC) ESC    &kp LCTRL  &kp LALT   &kp LGUI    &td2   &mo NUM_L      &mo SYM_L         &td1      &kp RGUI    &kp RALT   &mo SYS_L      &kp RET
 #endif
             >;
         };
