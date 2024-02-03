@@ -169,10 +169,10 @@
 	};
 	td2: bksp_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
-		label = "TD_BACKOSPACY";
+		label = "TD_BACKSPACY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp BKSP>, <&kp LS(BKSP)>;
+		bindings = <&kp BKSP>, <&kp LA(BKSP)>;
 	};
 	td3: mousebutton_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
