@@ -181,6 +181,22 @@
 		tapping-term-ms = <200>;
 		bindings = <&mouse_lbtn>, <&mouse_rbtn>;
 	};
+	par: paranthesis_tap_dance {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TD_PAR";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp LS(N8)>, <&kp LS(N9)>;
+	};
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        combo_par {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&par>;
+        };
     };
 
 // Conditional layer only when we have less thumb keys
