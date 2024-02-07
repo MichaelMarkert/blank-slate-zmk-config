@@ -227,19 +227,6 @@
 
     combos {
         compatible = "zmk,combos";
-	require-prior-idle-ms = <175>;
-        combo_star {
-            timeout-ms = <50>;
-	    require-prior-idle-ms = <175>;
-            key-positions = <2 3>;
-            bindings = <&kp LS(RBKT)>;
-        };
-	combo_hash {
-            timeout-ms = <50>;
-	    require-prior-idle-ms = <175>;
-            key-positions = <3 4>;
-            bindings = <&kp BSLH>;
-        };
 	combo_snglqt {
             timeout-ms = <50>;
             key-positions = <5 6>;
@@ -260,6 +247,12 @@
             timeout-ms = <50>;
             key-positions = <9 10>;
             bindings = <&kp LA(LS(N7))>;
+        };
+	combo_star {
+            timeout-ms = <50>;
+	    require-prior-idle-ms = <175>;
+            key-positions = <14 15>;
+            bindings = <&kp LS(RBKT)>;
         };
 	combo_plus {
             timeout-ms = <50>;
@@ -300,6 +293,12 @@
             timeout-ms = <50>;
             key-positions = <25 26>;
             bindings = <&kp LS(N5)>;
+        };
+	combo_hash {
+            timeout-ms = <50>;
+	    require-prior-idle-ms = <175>;
+            key-positions = <26 27>;
+            bindings = <&kp BSLH>;
         };
 	combo_amprsnd {
             timeout-ms = <50>;
