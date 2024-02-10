@@ -335,6 +335,27 @@
             key-positions = <40 43>;
             bindings = <&kp LA(BKSP)>;
         };
+// numbers combos
+	combo_seven {
+            timeout-ms = <50>;
+            key-positions = <4 7>;
+            bindings = <&kp N7>;
+        };
+	combo_eight {
+            timeout-ms = <50>;
+            key-positions = <3 8>;
+            bindings = <&kp N8>;
+        };
+	combo_nine {
+            timeout-ms = <50>;
+            key-positions = <2 9>;
+            bindings = <&kp N9>;
+        };
+	combo_nulltop {
+            timeout-ms = <50>;
+            key-positions = <1 10>;
+            bindings = <&kp N0>;
+        };
     };
 
 // Conditional layer only when we have less thumb keys
