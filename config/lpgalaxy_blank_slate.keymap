@@ -339,21 +339,25 @@
 	combo_seven {
             timeout-ms = <50>;
             key-positions = <4 7>;
+	    require-prior-idle-ms = <175>;
             bindings = <&kp N7>;
         };
 	combo_eight {
             timeout-ms = <50>;
             key-positions = <3 8>;
+	    require-prior-idle-ms = <175>;
             bindings = <&kp N8>;
         };
 	combo_nine {
             timeout-ms = <50>;
             key-positions = <2 9>;
+	    require-prior-idle-ms = <175>;
             bindings = <&kp N9>;
         };
 	combo_nulltop {
             timeout-ms = <50>;
             key-positions = <1 10>;
+	    require-prior-idle-ms = <175>;
             bindings = <&kp N0>;
         };
     };
