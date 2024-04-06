@@ -242,8 +242,8 @@
 	combo_vert {
             timeout-ms = <50>;
             key-positions = <8 9>;
-	    #if BT = 3
-            	bindings = <&kp RA(GRAVE)>;;
+	    #if BT == 3
+            	bindings = <&kp RA(GRAVE)>;
 	    #else
 	  	bindings = <&kp LA(N7)>;
 	    #endif
