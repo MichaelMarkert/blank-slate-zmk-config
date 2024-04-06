@@ -242,7 +242,10 @@
 	combo_vert {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&kp LA(N7)>;
+	    #ifdef BT(3)
+            	bindings = <&kp RA(GRAVE)>;;
+	    #else
+	  	bindings = <&kp LA(N7)>;
         };
 	combo_bkslsh {
             timeout-ms = <50>;
