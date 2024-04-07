@@ -159,7 +159,7 @@
 		label = "TD_HYPHY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp RA(Z)>, <&kp RA(S)>;
+		bindings = <&kp RA(Y)>, <&kp RA(S)>;
 	};
 	td1: space_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
@@ -187,7 +187,7 @@
 		label = "TD_SWITCHY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp TAB>, <&kp LG(LS(GRAVE))>;
+		bindings = <&kp TAB>, <&kp LG(GRAVE)>;
 	};
 	par: parenthesis_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
@@ -222,7 +222,7 @@
 		label = "TD_ACNT";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LS(GRAVE)>, <&kp GRAVE>;
+		bindings = <&kp GRAVE>, <&kp LC(GRAVE)>;
 	};
     };
 
@@ -324,7 +324,7 @@
 	combo_em {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&kp LA(LC(MINUS))>;
+            bindings = <&kp LC(MINUS)>;
         };
 	combo_excl {
             timeout-ms = <50>;
@@ -440,7 +440,7 @@
             bindings = <
 #ifdef QWERTY_BASE
  &td4       &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Z            &kp U          &kp I       &kp O      &kp P         &td0
- &mo NAV_L  &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp RA(O)	 &lt NAV_L RA(A)
+ &mo NAV_L  &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp RA(P)	 &lt NAV_L RA(Q)
  &kp LSHFT  &kp Y      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp MINUS      &kp LSHIFT
 #else
  &kp ESC    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT      &kp BKSP
