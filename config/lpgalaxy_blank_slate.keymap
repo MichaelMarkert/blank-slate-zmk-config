@@ -159,7 +159,7 @@
 		label = "TD_HYPHY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LBKT>, <&kp NON_US_HASH>;
+		bindings = <&kp RA(Z)>, <&kp RA(S)>;
 	};
 	td1: space_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
@@ -187,42 +187,42 @@
 		label = "TD_SWITCHY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp TAB>, <&kp LG(LS(EQUAL))>;
+		bindings = <&kp TAB>, <&kp LG(LS(GRAVE))>;
 	};
-	par: paranthesis_tap_dance {
+	par: parenthesis_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_PAR";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LS(N8)>, <&kp LS(N9)>;
+		bindings = <&kp LPAR>, <&kp RPAR>;
 	};
 	sqr: sqrbracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_SQR";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LA(N5)>, <&kp LA(N6)>;
+		bindings = <&kp LBKT>, <&kp RBKT>;
 	};
 	ptd: ptdbracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_PTD";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp GRAVE>, <&kp LS(GRAVE)>;
+		bindings = <&kp LT>, <&kp GT>;
 	};
 	crly: crlybracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_CRLY";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LA(N8)>, <&kp LA(N9)>;
+		bindings = <&kp LBRC>, <&kp RBRC>;
 	};
 	accent: accent_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_ACNT";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LS(EQUAL)>, <&kp EQUAL>;
+		bindings = <&kp LS(GRAVE)>, <&kp GRAVE>;
 	};
     };
 
@@ -232,26 +232,22 @@
             timeout-ms = <50>;
             key-positions = <5 6>;
 	    require-prior-idle-ms = <175>;
-            bindings = <&kp LS(BSLH)>;
+            bindings = <&kp APOS>;
         };
 	combo_slsh {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&kp LS(N7)>;
+            bindings = <&kp SLASH>;
         };
 	combo_vert {
             timeout-ms = <50>;
             key-positions = <8 9>;
-	    #if BT == 3
-            	bindings = <&kp RA(NUBS)>;
-	    #else
-	  	bindings = <&kp LA(N7)>;
-	    #endif
+	    bindings = <&kp PIPE>;
         };
 	combo_bkslsh {
             timeout-ms = <50>;
             key-positions = <9 10>;
-            bindings = <&kp LA(LS(N7))>;
+            bindings = <&kp BSLH>;
         };
 	combo_deg {
             timeout-ms = <50>;
@@ -262,17 +258,17 @@
             timeout-ms = <50>;
 	    require-prior-idle-ms = <175>;
             key-positions = <14 15>;
-            bindings = <&kp LS(RBKT)>;
+            bindings = <&kp ASTRK>;
         };
 	combo_plus {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            bindings = <&kp RBKT>;
+            bindings = <&kp PLUS>;
         };
 	combo_dblqt {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&kp LS(N2)>;
+            bindings = <&kp DQT>;
         };
 	combo_par {
             timeout-ms = <50>;
@@ -297,7 +293,7 @@
 	combo_circ {
             timeout-ms = <50>;
             key-positions = <24 25>;
-            bindings = <&kp NUBS>;
+            bindings = <&kp CARET>;
         };
 	combo_capsword {
             timeout-ms = <50>;
@@ -307,18 +303,18 @@
 	combo_prct {
             timeout-ms = <50>;
             key-positions = <25 26>;
-            bindings = <&kp LS(N5)>;
+            bindings = <&kp PERCENT>;
         };
 	combo_hash {
             timeout-ms = <50>;
 	    require-prior-idle-ms = <175>;
             key-positions = <26 27>;
-            bindings = <&kp BSLH>;
+            bindings = <&kp HASH>;
         };
 	combo_amprsnd {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&kp LS(N6)>;
+            bindings = <&kp AMPS>;
         };
 	combo_acnt {
             timeout-ms = <50>;
@@ -328,22 +324,22 @@
 	combo_em {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&kp LA(SLASH)>;
+            bindings = <&kp LA(LC(MINUS))>;
         };
 	combo_excl {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&kp LS(N1)>;
+            bindings = <&kp EXCL>;
         };
 	combo_qstn {
             timeout-ms = <50>;
             key-positions = <33 34>;
-            bindings = <&kp LS(NUHS)>;
+            bindings = <&kp QMARK>;
         };
 	combo_eqls {
             timeout-ms = <50>;
             key-positions = <34 35>;
-            bindings = <&kp LS(N0)>;
+            bindings = <&kp EQUAL>;
         };
 	combo_backword {
             timeout-ms = <50>;
@@ -443,9 +439,9 @@
             label = "Base";
             bindings = <
 #ifdef QWERTY_BASE
- &td4    &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &td0
- &mo NAV_L  &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp SEMI	 &lt NAV_L QUOT
- &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &kp LSHIFT
+ &td4       &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Z            &kp U          &kp I       &kp O      &kp P         &td0
+ &mo NAV_L  &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp RA(O)	 &lt NAV_L RA(A)
+ &kp LSHFT  &kp Y      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp MINUS      &kp LSHIFT
 #else
  &kp ESC    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT      &kp BKSP
  &kp TAB    &kp A      &kp R      &kp S       &kp T          &kp G          &kp M            &kp N          &kp E       &kp I      &kp O         &kp QUOT
@@ -480,7 +476,7 @@
         num_layer {
             label = "Num";
             bindings = <
-&kp F1     &kp F2   	&kp F3 	&kp F4 	&kp F5    &kp F6   &kp F7    &kp F8     &kp F9      &kp F10      &kp F11    &kp F12
+&kp F1     &kp F2   	&kp F3 	&kp F4 	&kp F5    &kp F6   &kp F7    &kp F8     &kp F9    	  &kp F10      &kp F11    &kp F12
 &kp NUBS   &kp N1	&kp N2 	&kp N3 	&kp N4    &kp N5   &kp N6    &kp N7     &kp N8      &kp N9       &kp N0     &kp NON_US_HASH
 &trans     &trans	&trans 	&trans 	&trans    &trans   &trans    &trans     &trans      &trans       &trans     &trans
 #ifdef TBLE_DUAL_2U
@@ -528,9 +524,9 @@
 num2_layer {
             label = "Num2";
             bindings = <
-&trans     &trans   	&trans 	&trans 	&trans    &trans   &kp LS(RBKT) &kp N7     &kp N8      &kp N9       &kp LS(N7)     &trans
-&trans     &trans	&trans 	&trans 	&trans    &trans   &kp RBKT  	&kp N4     &kp N5      &kp N6       &kp N0     &trans
-&trans     &trans	&trans 	&trans 	&trans    &trans   &kp FSLH    	&kp N1     &kp N2      &kp N3       &kp LS(N0) &trans
+&trans     &trans   	&trans 	&trans 	&trans    &trans   &kp ASTRK    &kp N7     &kp N8      &kp N9       &kp SLASH  &trans
+&trans     &trans	&trans 	&trans 	&trans    &trans   &kp MINUS  	&kp N4     &kp N5      &kp N6       &kp N0     &trans
+&trans     &trans	&trans 	&trans 	&trans    &trans   &kp PLUS    	&kp N1     &kp N2      &kp N3       &kp EQUAL  &trans
 #ifdef TBLE_DUAL_2U
 &trans  &trans       &trans     &trans              &trans                 &trans            &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
