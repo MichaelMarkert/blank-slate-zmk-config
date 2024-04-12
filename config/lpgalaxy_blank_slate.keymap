@@ -208,7 +208,7 @@
 		label = "TD_PTD";
 		#binding-cells = <0>;
 		tapping-term-ms = <200>;
-		bindings = <&kp LT>, <&kp GT>;
+		bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
 	};
 	crly: crlybracket_tap_dance {
 		compatible = "zmk,behavior-tap-dance";
