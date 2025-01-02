@@ -235,15 +235,9 @@
         compatible = "zmk,combos";
 	combo_sys {
             timeout-ms = <50>;
-            key-positions = <35 41>;
+            key-positions = <35 44>;
 	    require-prior-idle-ms = <175>;
             bindings = <&mo SYS_L>;
-        };
-	combo_num {
-            timeout-ms = <50>;
-            key-positions = <39 40>;
-	    require-prior-idle-ms = <175>;
-            bindings = <&mo NUM_R>;
         };
 	combo_ret {
             timeout-ms = <50>;
@@ -264,7 +258,7 @@
         };
 	combo_backword {
             timeout-ms = <50>;
-            key-positions = <38 39>;
+            key-positions = <41 42>;
             bindings = <&kp LA(BKSP)>;
         };
 	combo_snglqt {
